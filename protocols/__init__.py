@@ -1,0 +1,189 @@
+"""Protocol Functions Package"""
+
+from .uniswap import UNISWAP_FUNCTIONS
+from .aave import AAVE_FUNCTIONS
+from .maker import MAKER_FUNCTIONS
+from .lido import LIDO_FUNCTIONS
+from .curve import CURVE_FUNCTIONS
+from .bridges import BRIDGE_FUNCTIONS
+from .compound import COMPOUND_FUNCTIONS
+from .balancer import BALANCER_FUNCTIONS
+from .sushiswap import SUSHISWAP_FUNCTIONS
+from .yearn import YEARN_FUNCTIONS
+from .bridges_extended import BRIDGE_EXTENDED_FUNCTIONS
+from .liquid_staking import LIQUID_STAKING_FUNCTIONS
+from .restaking import RESTAKING_FUNCTIONS
+from .traditional_staking import TRADITIONAL_STAKING_FUNCTIONS
+from .launchpads import LAUNCHPAD_FUNCTIONS
+from .additional_dex import ADDITIONAL_DEX_FUNCTIONS
+from .stakestone import STAKESTONE_FUNCTIONS
+from .mantle_lsp import MANTLE_LSP_FUNCTIONS
+from .oneinch import ONEINCH_FUNCTIONS
+from .frax_extended import FRAX_EXTENDED_FUNCTIONS
+from .ankr_extended import ANKR_EXTENDED_FUNCTIONS
+from .stakewise_extended import STAKEWISE_EXTENDED_FUNCTIONS
+from .dydx import DYDX_FUNCTIONS
+from .bridges.hop import HOP_FUNCTIONS
+from .bridges.across import ACROSS_FUNCTIONS
+from .bridges.synapse import SYNAPSE_FUNCTIONS
+from .bridges.stargate import STARGATE_FUNCTIONS
+from .bridges.celer import CELER_FUNCTIONS
+from .bridges.multichain import MULTICHAIN_FUNCTIONS
+from .bridges.portal import PORTAL_FUNCTIONS
+from .bridges.allbridge import ALLBRIDGE_FUNCTIONS
+from .bridges.layerzero import LAYERZERO_FUNCTIONS
+from .dex.hashflow import HASHFLOW_FUNCTIONS
+from .dex.maverick import MAVERICK_FUNCTIONS
+from .dex.gnosis import GNOSIS_FUNCTIONS
+from .dex.velodrome import VELODROME_FUNCTIONS
+from .dex.camelot import CAMELOT_FUNCTIONS
+from .dex.traderjoe import TRADERJOE_FUNCTIONS
+from .dex.beethoven import BEETHOVEN_FUNCTIONS
+from .dex.balancer_v2 import BALANCER_V2_FUNCTIONS
+from .dex.wombat import WOMBAT_FUNCTIONS
+from .dex.dodo import DODO_FUNCTIONS
+from .dex.bancor import BANCOR_FUNCTIONS
+from .dex.platypus import PLATYPUS_FUNCTIONS
+from .dex.solidly import SOLIDLY_FUNCTIONS
+from .dex.gmx import GMX_FUNCTIONS
+from .dex.kyberswap import KYBERSWAP_FUNCTIONS
+from .dex.zyberswap import ZYBERSWAP_FUNCTIONS
+from .dex.quickswap import QUICKSWAP_FUNCTIONS
+from .dex.spookyswap import SPOOKYSWAP_FUNCTIONS
+from .dex.spiritswap import SPIRITSWAP_FUNCTIONS
+from .dex.sushiswap_v3 import SUSHISWAP_V3_FUNCTIONS
+from .dex.dystopia import DYSTOPIA_FUNCTIONS
+from .dex.meshswap import MESHSWAP_FUNCTIONS
+from .gaming.decentral_games import DECENTRAL_GAMES_FUNCTIONS
+from .gaming.rollbit import ROLLBIT_FUNCTIONS
+from .gaming.betswirl import BETSWIRL_FUNCTIONS
+from .gaming.polymarket import POLYMARKET_FUNCTIONS
+from .gaming.wallfair import WALLFAIR_FUNCTIONS
+from .gaming.illuvium import ILLUVIUM_FUNCTIONS
+from .gaming.axie import AXIE_FUNCTIONS
+from .gaming.gods_unchained import GODS_UNCHAINED_FUNCTIONS
+from .gaming.sorare import SORARE_FUNCTIONS
+from .gaming.zed_run import ZED_RUN_FUNCTIONS
+from .gaming.pegaxy import PEGAXY_FUNCTIONS
+from .gaming.stepn import STEPN_FUNCTIONS
+from .gaming.thetan_arena import THETAN_ARENA_FUNCTIONS
+from .gaming.big_time import BIG_TIME_FUNCTIONS
+from .gaming.ember_sword import EMBER_SWORD_FUNCTIONS
+from .gaming.star_atlas import STAR_ATLAS_FUNCTIONS
+from .gaming.defi_kingdoms import DEFI_KINGDOMS_FUNCTIONS
+from .gaming.crypto_unicorns import CRYPTO_UNICORNS_FUNCTIONS
+from .gaming.gambling.stake import STAKE_FUNCTIONS
+from .gaming.gambling.bc_game import BC_GAME_FUNCTIONS
+from .gaming.gambling.rollbit import ROLLBIT_FUNCTIONS
+from .gaming.gambling.duelbits import DUELBITS_FUNCTIONS
+from .gaming.gambling.roobet import ROOBET_FUNCTIONS
+from .gaming.gambling.gambit import GAMBIT_FUNCTIONS
+from .lending.euler import EULER_FUNCTIONS
+from .lending.benqi import BENQI_FUNCTIONS
+from .lending.venus import VENUS_FUNCTIONS
+from .lending.cream import CREAM_FUNCTIONS
+from .lending.iron_bank import IRON_BANK_FUNCTIONS
+from .lending.maple import MAPLE_FUNCTIONS
+from .lending.radiant import RADIANT_FUNCTIONS
+from .lending.hundred_finance import HUNDRED_FINANCE_FUNCTIONS
+from .lending.geist import GEIST_FUNCTIONS
+from .yield.convex import CONVEX_FUNCTIONS
+from .yield.concentrator import CONCENTRATOR_FUNCTIONS
+from .yield.alpaca import ALPACA_FUNCTIONS
+from .yield.beefy import BEEFY_FUNCTIONS
+from .yield.pickle import PICKLE_FUNCTIONS
+
+PROTOCOLS = {
+    'UNISWAP': UNISWAP_FUNCTIONS,
+    'AAVE': AAVE_FUNCTIONS,
+    'MAKER': MAKER_FUNCTIONS,
+    'LIDO': LIDO_FUNCTIONS,
+    'CURVE': CURVE_FUNCTIONS,
+    'BRIDGES': BRIDGE_FUNCTIONS,
+    'COMPOUND': COMPOUND_FUNCTIONS,
+    'BALANCER': BALANCER_FUNCTIONS,
+    'SUSHISWAP': SUSHISWAP_FUNCTIONS,
+    'YEARN': YEARN_FUNCTIONS,
+    'BRIDGES_EXTENDED': BRIDGE_EXTENDED_FUNCTIONS,
+    'LIQUID_STAKING': LIQUID_STAKING_FUNCTIONS,
+    'RESTAKING': RESTAKING_FUNCTIONS,
+    'TRADITIONAL_STAKING': TRADITIONAL_STAKING_FUNCTIONS,
+    'LAUNCHPADS': LAUNCHPAD_FUNCTIONS,
+    'ADDITIONAL_DEX': ADDITIONAL_DEX_FUNCTIONS,
+    'STAKESTONE': STAKESTONE_FUNCTIONS,
+    'MANTLE_LSP': MANTLE_LSP_FUNCTIONS,
+    'ONEINCH': ONEINCH_FUNCTIONS,
+    'FRAX_EXTENDED': FRAX_EXTENDED_FUNCTIONS,
+    'ANKR_EXTENDED': ANKR_EXTENDED_FUNCTIONS,
+    'STAKEWISE_EXTENDED': STAKEWISE_EXTENDED_FUNCTIONS,
+    'DYDX': DYDX_FUNCTIONS,
+    'HOP': HOP_FUNCTIONS,
+    'ACROSS': ACROSS_FUNCTIONS,
+    'SYNAPSE': SYNAPSE_FUNCTIONS,
+    'STARGATE': STARGATE_FUNCTIONS,
+    'CELER': CELER_FUNCTIONS,
+    'MULTICHAIN': MULTICHAIN_FUNCTIONS,
+    'PORTAL': PORTAL_FUNCTIONS,
+    'ALLBRIDGE': ALLBRIDGE_FUNCTIONS,
+    'LAYERZERO': LAYERZERO_FUNCTIONS,
+    'HASHFLOW': HASHFLOW_FUNCTIONS,
+    'MAVERICK': MAVERICK_FUNCTIONS,
+    'GNOSIS': GNOSIS_FUNCTIONS,
+    'VELODROME': VELODROME_FUNCTIONS,
+    'CAMELOT': CAMELOT_FUNCTIONS,
+    'TRADERJOE': TRADERJOE_FUNCTIONS,
+    'BEETHOVEN': BEETHOVEN_FUNCTIONS,
+    'BALANCER_V2': BALANCER_V2_FUNCTIONS,
+    'WOMBAT': WOMBAT_FUNCTIONS,
+    'DODO': DODO_FUNCTIONS,
+    'BANCOR': BANCOR_FUNCTIONS,
+    'PLATYPUS': PLATYPUS_FUNCTIONS,
+    'SOLIDLY': SOLIDLY_FUNCTIONS,
+    'GMX': GMX_FUNCTIONS,
+    'KYBERSWAP': KYBERSWAP_FUNCTIONS,
+    'ZYBERSWAP': ZYBERSWAP_FUNCTIONS,
+    'QUICKSWAP': QUICKSWAP_FUNCTIONS,
+    'SPOOKYSWAP': SPOOKYSWAP_FUNCTIONS,
+    'SPIRITSWAP': SPIRITSWAP_FUNCTIONS,
+    'SUSHISWAP_V3': SUSHISWAP_V3_FUNCTIONS,
+    'DYSTOPIA': DYSTOPIA_FUNCTIONS,
+    'MESHSWAP': MESHSWAP_FUNCTIONS,
+    'DECENTRAL_GAMES': DECENTRAL_GAMES_FUNCTIONS,
+    'ROLLBIT': ROLLBIT_FUNCTIONS,
+    'BETSWIRL': BETSWIRL_FUNCTIONS,
+    'POLYMARKET': POLYMARKET_FUNCTIONS,
+    'WALLFAIR': WALLFAIR_FUNCTIONS,
+    'ILLUVIUM': ILLUVIUM_FUNCTIONS,
+    'AXIE': AXIE_FUNCTIONS,
+    'GODS_UNCHAINED': GODS_UNCHAINED_FUNCTIONS,
+    'SORARE': SORARE_FUNCTIONS,
+    'ZED_RUN': ZED_RUN_FUNCTIONS,
+    'PEGAXY': PEGAXY_FUNCTIONS,
+    'STEPN': STEPN_FUNCTIONS,
+    'THETAN_ARENA': THETAN_ARENA_FUNCTIONS,
+    'BIG_TIME': BIG_TIME_FUNCTIONS,
+    'EMBER_SWORD': EMBER_SWORD_FUNCTIONS,
+    'STAR_ATLAS': STAR_ATLAS_FUNCTIONS,
+    'DEFI_KINGDOMS': DEFI_KINGDOMS_FUNCTIONS,
+    'CRYPTO_UNICORNS': CRYPTO_UNICORNS_FUNCTIONS,
+    'STAKE': STAKE_FUNCTIONS,
+    'BC_GAME': BC_GAME_FUNCTIONS,
+    'ROLLBIT_GAMBLING': ROLLBIT_FUNCTIONS,
+    'DUELBITS': DUELBITS_FUNCTIONS,
+    'ROOBET': ROOBET_FUNCTIONS,
+    'GAMBIT': GAMBIT_FUNCTIONS,
+    'EULER': EULER_FUNCTIONS,
+    'BENQI': BENQI_FUNCTIONS,
+    'VENUS': VENUS_FUNCTIONS,
+    'CREAM': CREAM_FUNCTIONS,
+    'IRON_BANK': IRON_BANK_FUNCTIONS,
+    'MAPLE': MAPLE_FUNCTIONS,
+    'RADIANT': RADIANT_FUNCTIONS,
+    'HUNDRED_FINANCE': HUNDRED_FINANCE_FUNCTIONS,
+    'GEIST': GEIST_FUNCTIONS,
+    'CONVEX': CONVEX_FUNCTIONS,
+    'CONCENTRATOR': CONCENTRATOR_FUNCTIONS,
+    'ALPACA': ALPACA_FUNCTIONS,
+    'BEEFY': BEEFY_FUNCTIONS,
+    'PICKLE': PICKLE_FUNCTIONS
+}
